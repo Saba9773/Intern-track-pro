@@ -1,7 +1,7 @@
 // Global Endpoint Configuration 
 // Get your free API keys instantly from https://developer.adzuna.com/
-const ADZUNA_APP_ID = 'YOUR_FREE_APP_ID'; 
-const ADZUNA_APP_KEY = 'YOUR_FREE_APP_KEY';
+const ADZUNA_APP_ID = '9fccf412'; 
+const ADZUNA_APP_KEY = '5d87f8b6a52a2cea155ce347357ae0c9';
 const COUNTRY_CODE = 'in'; // 'in' for India, 'us' for USA, 'gb' for UK, etc.
 
 document.getElementById('search-btn').addEventListener('click', fetchLiveInternships);
