@@ -1,0 +1,25 @@
+optgroup {
+    background: var(--surface);
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}
+option {
+    color: var(--text-main);
+    font-weight: normal;
+    background: var(--surface);
+}
+.loading-spinner {
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-style: italic;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}

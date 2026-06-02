@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternTrack v2 // Global Tech Internship Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <span class="meta-tag">Open Source Global Engine</span>
+            <h1>InternTrack Pro</h1>
+            <p>Scan live developer, cloud, and security internships across any global city instantly.</p>
+        </header>
+
+        <section class="search-section">
+            <div class="input-group">
+                <label for="city-input">Global City / Remote</label>
+                <input type="text" id="city-input" placeholder="e.g., Bangalore, San Francisco, London...">
+            </div>
+            <div class="input-group">
+                <label for="stack-select">Specialized Tech Stack</label>
+                <select id="stack-select">
+                    <optgroup label="Software Engineering & Web">
+                        <option value="React Frontend">Frontend (React / Vue / Angular)</option>
+                        <option value="Node Backend">Backend (Node.js / Express / API)</option>
+                        <option value="Python Java Developer">Software Engineer (Python / C++ / Java)</option>
+                        <option value="Flutter React Native">Mobile Apps (Flutter / Swift / Kotlin)</option>
+                    </optgroup>
+                    <optgroup label="Cloud & Security">
+                        <option value="Cybersecurity Security Analyst">Cybersecurity / InfoSec</option>
+                        <option value="Cloud AWS Azure Architecture">Cloud Engineering (AWS / Azure / GCP)</option>
+                        <option value="DevOps Docker Kubernetes">DevOps / SRE / CI-CD</option>
+                    </optgroup>
+                    <optgroup label="Data & Artificial Intelligence">
+                        <option value="Machine Learning AI Data Scientist">AI / Machine Learning / Deep Learning</option>
+                        <option value="Data Analyst SQL PowerBI">Data Analytics & Business Intelligence</option>
+                    </optgroup>
+                </select>
+            </div>
+            <button id="search-btn">Scan Live API</button>
+        </section>
+
+        <main class="results-container">
+            <div class="results-header">
+                <span id="results-count">Configure target city parameters to begin global handshake</span>
+            </div>
+            <div id="loading" class="loading-spinner" style="display: none;">
+                Querying live global data endpoints... Please hold...
+            </div>
+            <div class="jobs-grid" id="jobs-grid"></div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
